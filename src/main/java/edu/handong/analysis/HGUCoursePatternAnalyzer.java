@@ -57,12 +57,9 @@ public class HGUCoursePatternAnalyzer {
 	 */
 	private Student[] initiateStudentArrayFromLines(String[] lines) {  
 		// TODO: implement this method
-		String [] a = new String[lines.length];
-		Student tmp;
-		// String [] b= new String[lines.length];
+	
 		Student[] students = new Student[lines.length];
-		// students = new Student[lines.length];    // array크기를 지정
-		// a = new Student[lines.length]; 
+	
 		Student[] noDuplicates;
 		noDuplicates= new Student[lines.length];
 		
@@ -95,15 +92,14 @@ public class HGUCoursePatternAnalyzer {
 	private boolean studentExist(Student[] students, Student student) {
 		
 		// TODO: implement this method
-		//students = new Student[lines.length];
+	
 		String [] a = new String[lines.length];
 		
-		//String [] a = new String[1];
-		//a[0] =  student.getName();
+
 		String obj = student.getName();
 		for(int i=0; i<lines.length; i++) {
 			a[i]= students[i].getName();
-			//System.out.println(a[i]);
+
 		}
 		
 		for(int i=0; i<students.length; i++) {
