@@ -75,7 +75,7 @@ public class HGUCoursePatternAnalyzer {
 		}
 		int d=0;
 		for(int i=0; i<lines.length; i++) {
-			noDuplicates[i] = new Student(lines[i].trim().split(",")[1]);
+			noDuplicates[i] = new Student(lines[i].split(",")[1].trim());
 			
 			if(studentExist(students, noDuplicates[i])==false){
 				students[d++] = noDuplicates[i];
@@ -136,7 +136,7 @@ public class HGUCoursePatternAnalyzer {
 		//
 		int d=0;
 		for(int i=0; i<lines.length; i++) {
-			noDuplicates[i] = new Course(lines[i].trim().split(",")[2]);
+			noDuplicates[i] = new Course(lines[i].split(",")[2].trim());
 			
 			if(courseExist(courses, noDuplicates[i])==false){
 				courses[d++] = noDuplicates[i];
