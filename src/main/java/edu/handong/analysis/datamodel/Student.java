@@ -1,6 +1,6 @@
 package edu.handong.analysis.datamodel;
 
-public class Student{
+public class Student {
 	private String name;
 	
 	public Student(String name) {
@@ -8,6 +8,6 @@ public class Student{
 	}
 	
 	public String getName() {
-		return name;
+		return this.name;
 	}
 }
